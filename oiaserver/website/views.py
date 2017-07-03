@@ -6,6 +6,9 @@ from django.http import HttpResponse
 def index(request):
     context = {'latest_question_list': ['hola', 'bienvenido']}
     return render(request, 'website/index.html', context)
+
+def nosotros(request):
+	return HttpResponse("Hola, Nosotros")
 	
 def contacto(request):
 	return HttpResponse("Hola, Cpntacto")
